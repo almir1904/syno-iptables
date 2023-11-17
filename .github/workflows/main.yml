@@ -218,7 +218,7 @@ jobs:
           mkdir -p /source/output/iptables
           git clone -c http.sslVerify=false git://git.netfilter.org/iptables iptables
           cd iptables
-          # git checkout v1.8.3 
+          git checkout v1.8.3 
           . ./autogen.sh
           ./configure CC=${CC} --host=${HOST} --prefix="/source/output/iptables" --disable-nftables
           [ -z "`grep 'env.mak' Makefile`" ] && sed -i '1 i include /env.mak' Makefile
