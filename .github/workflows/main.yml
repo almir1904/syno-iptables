@@ -99,7 +99,9 @@ jobs:
          #   platform: denverton
          # - version: 7.2
          #   platform: epyc7002
-          - version: 7.2 
+         # - version: 7.2 
+         #   platform: geminilake
+          - version: 7.2.2 
             platform: geminilake
          # - version: 7.2 
          #   platform: purley
